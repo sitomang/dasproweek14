@@ -31,6 +31,7 @@ public class loginview extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        _kareem = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         txtusername = new javax.swing.JTextField();
         txtpassword = new javax.swing.JTextField();
@@ -42,15 +43,23 @@ public class loginview extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 0, 0));
 
+        _kareem.setText("kareem group");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 149, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(_kareem, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(_kareem, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 255));
@@ -176,6 +185,7 @@ public class loginview extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel _kareem;
     private javax.swing.JButton btnlogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
